@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from port_control.views import set_pin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+	path('pins/<int:pk>', set_pin),
 ]
