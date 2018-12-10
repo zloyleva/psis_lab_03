@@ -2,8 +2,13 @@
 
 ### Create a virtualenv to isolate our package dependencies locally
 ```
-virtualenv lab_03
+python3 -m venv lab_03
 source lab_03/bin/activate
+```
+fix error with env
+```
+python -m pip uninstall pip
+python -m virtualenv lab_03
 ```
 
 ### Install Django and Django REST framework into the virtualenv (If it need)
@@ -44,4 +49,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
+```
+
+```
+pip install RPi.GPIO
 ```
